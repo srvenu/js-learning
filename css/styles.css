@@ -1,0 +1,20 @@
+.charmonman-regular {
+    font-family: "Charmonman", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 70pt;
+  }
+  
+  .charmonman-bold {
+    font-family: "Charmonman", cursive;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .rock-salt-regular {
+    font-family: "Rock Salt", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
