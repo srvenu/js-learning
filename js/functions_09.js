@@ -67,3 +67,5 @@ console.log("a : "+a); //Global scope of a
 // console.log(b);
 // console.log(c);
 
+
+
