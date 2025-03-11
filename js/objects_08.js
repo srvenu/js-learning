@@ -48,4 +48,21 @@ const regularUser = {
 // console.log(tinderUser);
 
 
+// ===================== Objects ========================
+
+// API Application programming interface
+
+// Destructuring of Object
+
+const course = {
+    courseName : "Java Script",
+    price: "999",
+    courseInstructor : "Venu"
+}
+
+// course.courseInstructor
+
+const {courseInstructor} = course;
+
+console.log(courseInstructor);
 
