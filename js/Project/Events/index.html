@@ -56,12 +56,23 @@
     //Propogation - 1) Bubbling event 2) Capturing event ("why 3rd attribute is flase(default)")
     document.getElementById('google').addEventListener('click',(e)=>{
         e.preventDefault();
-        e.stopPropagation();
+        // e.stopPropagation();
         console.log("Google Clicked ! ");
     },false)
 
+    // document.querySelector('#images').addEventListener('click', (e)=>{
+    //     console.log(e.target.parentNode);
+    //     if(e.target.tagName === 'IMG'){
+    //         console.log(e.target.id);
+    //         let removeIt = e.target.parentNode;
+    //         removeIt.remove();
+    //     }
+        
+    // },false)
+
+
     document.querySelector('#images').addEventListener('click', (e)=>{
-        console.log(e.target.parentNode);
+        console.log(e.target.tagName);
         if(e.target.tagName === 'IMG'){
             console.log(e.target.id);
             let removeIt = e.target.parentNode;
