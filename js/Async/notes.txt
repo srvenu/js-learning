@@ -1,4 +1,9 @@
 Blocking Code Vs Non Blocking Code
 
 * Reading the file 
-    
+
+Java Script engine is a single threaded executes one line at a time
+
+Web API 
+
+Task Queue
