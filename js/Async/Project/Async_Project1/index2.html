@@ -13,31 +13,35 @@
     <p></p>
 </body>
 <script>
-    // setTimeout(function(){
-    // console.log("Hii Hello Everyone");
-    // },2000)
+    //Generate Random numbers 
 
-    // setInterval(() => {
-    // console.log("This code will execute every 4 sec delay");
-    // }, 4000);
+    const randomColor = function(){
+        const hex = "0123456789ABCDEF"
+        let color = '#'
+        for(let i = 0; i<6 ; i++){
+            color += Math.floor((Math.random() * 16))
+        }
+        return color;
+    };
 
-    // const sayVenu = function(){
-    //     console.log("Venu S R",Date.now());
-    // }
+    let intervalId;
+    const startChangingColor = function(){
+        if(!intervalId){
+            intervalId = setInterval(changeBgColor,200);
+        }
+ 
+        function changeBgColor(){
+        document.body.style.backgroundColor = randomColor();
+        }
+    };
+    const stopChangingColor = function(){
+        clearInterval(intervalId);
+        intervalId = null;
+    };
 
-    // const changeText = function(){
-    //     document.querySelector('h1').innerHTML = "How are you doing?"
-    // }
+    document.querySelector('#start').addEventListener('click',startChangingColor);
+    document.querySelector('#stop').addEventListener('click',stopChangingColor);
 
-    // const intervalId = setInterval(sayVenu,5000)
-
-    // document.querySelector('#stop').addEventListener('click',()=>{
-    //     clearTimeout(changeMe);
-    //     document.querySelector('p').innerText = "The change Text Function is stopped if you want to see just refresh the page !"
-    // })
-
-
-    
 
 </script>
 </html>
