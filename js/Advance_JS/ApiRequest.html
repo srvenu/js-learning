@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api Requests</title>
+</head>
+<body>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ducimus ut pariatur rerum necessitatibus asperiores, ex, nihil, incidunt perspiciatis architecto quod dignissimos modi. Aperiam, perspiciatis voluptatibus. Repellendus cupiditate doloremque molestias.
+</body>
+<script>
+    const requestUrl = "https://api.github.com/users/srvenu";
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET',requestUrl);
+    xhr.onreadystatechange = () =>{
+        console.log(xhr.readyState);
+        if(xhr.readyState === 4){
+            console.log(Response);
+        }
+    }
+    xhr.send();
+
+</script>
+</html>
