@@ -50,9 +50,11 @@ function User(username,loginCount,isLoggedIn){
 
 const userOne =new User('Venu',10,true);
 const userTwo =new User('VenuSR',11,false);
-console.log(userOne);
-console.log(userTwo);
+// console.log(userOne);
+// console.log(userTwo);
 // When we use new keyword we will create new instances
 //  Constructure function is called
 // every object will injucted into that function
 // Then we will get the output
+
+console.log(userOne.constructor);
